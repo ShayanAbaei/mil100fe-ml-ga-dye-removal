@@ -1,0 +1,12 @@
+column,description,unit,role
+sample_id,Sample identifier S1-S11,categorical,From manuscript Table 2/3
+time_h,Hydrothermal synthesis time,hours,Input feature
+temperature_C,Hydrothermal synthesis temperature,deg C,Input feature
+metal_to_ligand_molar_ratio_Fe_to_ligand,Fe:ligand molar ratio,dimensionless,"Input feature; molar ratio, not mass ratio"
+metal_concentration_M,Initial metal concentration,mol L^-1,Input feature
+BET_surface_area_m2_g,BET surface area,m^2 g^-1,Target 1 / response variable
+crystallinity_percent,Relative crystallinity from XRD,%,Response variable
+total_pore_volume_cm3_g,Total pore volume,cm^3 g^-1,Response variable
+average_crystallite_size_nm,Average crystallite size,nm,Response variable
+yield_percent,Synthesis yield,%,Response variable
+MB_removal_percent,Methylene blue removal efficiency,%,Target 2 / response variable
