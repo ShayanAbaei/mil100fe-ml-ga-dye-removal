@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+xgboost
+openpyxl
+scipy
+shap
+plotly
+deap
+pyswarm
+scikit-opt
