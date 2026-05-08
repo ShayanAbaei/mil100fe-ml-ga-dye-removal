@@ -1,0 +1,7 @@
+target_id,target_name,model_file,kernel,alpha,normalize_y,optimizer,n_restarts_optimizer,random_state
+Target 1,BET surface area,GPR_target1_BET_surface_area_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",1.2915496650148826e-09,False,fmin_l_bfgs_b,3,49
+Target 2,MB removal,GPR_target2_MB_removal_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",1.0,True,,0,0
+Target 3,Total pore volume,GPR_target3_total_pore_volume_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",0.005994842503189421,True,fmin_l_bfgs_b,10,371
+Target 4,Average crystallite size,GPR_target4_average_crystallite_size_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",1.0,True,fmin_l_bfgs_b,3,1636
+Target 5,Crystallinity,GPR_target5_crystallinity_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",0.007017038286703808,True,fmin_l_bfgs_b,2,0
+Target 6,Yield,GPR_target6_yield_best_params.pkl,"ExpSineSquared(length_scale=1, periodicity=3)",3.5938136638046256e-05,True,fmin_l_bfgs_b,3,49
