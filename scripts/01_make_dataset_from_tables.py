@@ -1,0 +1,26 @@
+"""Create the machine-readable CSV files from manuscript Tables 2 and 3."""
+from pathlib import Path
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+DATA.mkdir(exist_ok=True)
+
+rows = [
+    ["S1",20,110,1.00,0.15,499.5,20.9,0.257,17.5,75.4,49.7],
+    ["S2",40,110,2.25,0.30,1273.0,12.9,0.615,33.1,96.8,52.0],
+    ["S3",60,110,3.50,0.45,1305.0,29.0,0.591,22.7,81.4,40.0],
+    ["S4",20,130,2.25,0.45,1436.9,28.5,0.628,21.8,72.0,53.0],
+    ["S5",40,130,3.50,0.15,620.5,10.5,0.691,34.1,69.4,76.5],
+    ["S6",60,130,1.00,0.30,1331.5,23.6,0.604,27.2,82.8,84.0],
+    ["S7",20,150,3.50,0.30,1068.9,21.3,0.479,20.6,73.6,48.0],
+    ["S8",40,150,1.00,0.45,389.1,24.1,0.194,33.4,64.0,70.0],
+    ["S9",60,150,2.25,0.15,856.4,7.6,0.401,31.6,72.3,84.5],
+    ["S10",40,130,1.00,0.15,1423.23,19.0,0.753,27.5,93.2,88.6],
+    ["S11",40,110,3.50,0.30,1748.0,36.2,0.827,24.7,98.6,87.7],
+]
+cols = ["sample_id","time_h","temperature_C","metal_to_ligand_molar_ratio_Fe_to_ligand","metal_concentration_M","BET_surface_area_m2_g","crystallinity_percent","total_pore_volume_cm3_g","average_crystallite_size_nm","yield_percent","MB_removal_percent"]
+df = pd.DataFrame(rows, columns=cols)
+df.to_csv(DATA / "mil100fe_ml_dataset_full_six_targets.csv", index=False)
+df[["sample_id","time_h","temperature_C","metal_to_ligand_molar_ratio_Fe_to_ligand","metal_concentration_M","BET_surface_area_m2_g","MB_removal_percent"]].to_csv(DATA / "mil100fe_ml_dataset_primary_targets.csv", index=False)
+print("Saved CSV files in", DATA)
