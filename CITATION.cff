@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "MIL-100(Fe) ML-GA Dye Removal Reproducibility Kit"
+message: "If you use this dataset or code, please cite the associated manuscript and this repository."
+type: software
+authors:
+  - family-names: Abaei
+    given-names: Shayan
+  - family-names: Zahedi Asl
+    given-names: Saeid
+  - family-names: Alimardani
+    given-names: Hosein
+  - family-names: Beydaghdari
+    given-names: Mohammadreza
+  - family-names: Hooriabad Saboor
+    given-names: Fahimeh
+  - family-names: Asgari
+    given-names: Mehrdad
+repository-code: "https://github.com/ShayanAbaei/mil100fe-ml-ga-dye-removal"
+version: "1.0.0"
+date-released: "2026-XX-XX"
